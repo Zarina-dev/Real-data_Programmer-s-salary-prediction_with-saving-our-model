@@ -5,10 +5,10 @@ Real data_Programmer's salary prediction_with saving our model. Building model p
 ## 추가: 23년 7월 21일
 saved_steps.pkl 을 다시 사용하여 predict해봄
 
-### 모델 pickle했을때의 환경과 똑같은 환경 만듦
+### 1. 모델 pickle했을때의 환경과 똑같은 환경 만듦
 unpickle을 위해 ```python3.9```, ```scikit-learn==1.0``` 이 두개 준비
 
-### load 및 predict 코드
+### 2. load 및 predict 코드
 Note! ```.pd```보다 ```.pkl```로 저장하는게 better인 거 같음 (다른 저장된 ```.pd```을 다시 활용하려고 했는데 잘 안됐음)
 
 ```
@@ -60,7 +60,7 @@ def main():
 if __name__ =="__main__":
     main()
 ```
-### 콘솔창 출력
+### 3. 콘솔창 출력
 ```
 MODEL UNPICKLED:  {'model': DecisionTreeRegressor(max_depth=10, random_state=0), 'encoder_Country': LabelEncoder(), 'encoder_education': LabelEncoder()} 
 
